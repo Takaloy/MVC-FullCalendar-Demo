@@ -19,8 +19,8 @@ namespace MVCFullCalendarICal.Controllers
         /// <returns></returns>
         public JsonResult GetCalendarEvents(double start, double end)
         {
-            var prospectService = new MockWebServiceCallClass();
-            var eventDetails = prospectService.GetCalendarEvents();
+            var eventService = new MockWebServiceCallClass();
+            var eventDetails = eventService.GetCalendarEvents();
 
             var eventList = from item in eventDetails
                             select new
