@@ -6,7 +6,7 @@
 <head>
     <title>MVC FullCalendar Implementation Example</title>
     <link rel='stylesheet' type='text/css' href='~/Content/fullcalendar.css' />
-    <script type='text/javascript' src='~/scripts/jquery-1.7.1.min.js'></script>
+    <script type='text/javascript' src='~/scripts/jquery-2.1.0.min.js'></script>
     <script type='text/javascript' src='~/scripts/fullcalendar.js'></script>
 </head>
 <h2>MVC Calendar and ICal Combo Example</h2>
@@ -16,7 +16,7 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('#calendar').fullCalendar({
-            events: "Home/GetCalendarEvents/"
+            events: "@Url.Action("GetCalendarEvents/")"
         });
     });
 </script>
